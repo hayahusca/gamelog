@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Play — GameLog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="letsplay">
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">GAME<span>LOG</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="avis.html">Avis</a></li>
+      <li><a href="letsplay.html" class="active">Let's Play</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <div class="page-hero">
+    <span class="hero-tag section-tag">// sessions & présentations</span>
+    <h1>LET'S<br><span class="accent">PLAY</span></h1>
+    <p>Mes playthroughs, défis et présentations de jeux.</p>
+  </div>
+
+  <div class="page-content">
+    <div class="filters" id="lp-filters"></div>
+    <div class="lp-list" id="lp-grid"></div>
+  </div>
+
+  <footer class="footer">
+    <p class="logo">GAME<span>LOG</span></p>
+    <p>Site statique · Hébergé sur <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    <p class="footer-edit">✏️ Éditez <code>data.js</code> pour ajouter un let's play</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
