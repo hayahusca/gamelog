@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avis — GameLog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page="avis">
-
   <nav class="navbar">
     <a href="index.html" class="logo">GAME<span>LOG</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="avis.html" class="active">Avis</a></li>
       <li><a href="letsplay.html">Let's Play</a></li>
+      <li><a href="avis.html" class="active">Avis</a></li>
       <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="recherches.html">Recherchés</a></li>
+      <li><a href="videos.html">Vidéos</a></li>
+      <li><a href="reseaux.html">Réseaux</a></li>
     </ul>
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
   </nav>
-
   <div class="page-hero">
     <span class="hero-tag section-tag">// critiques & impressions</span>
     <h1>AVIS<br><span class="accent">JEUX</span></h1>
     <p>Mes avis honnêtes sur les jeux que j'ai terminés ou explorés.</p>
   </div>
-
   <div class="page-content">
     <div class="filters" id="avis-filters"></div>
     <div class="cards-grid" id="avis-grid"></div>
   </div>
-
   <footer class="footer">
     <p class="logo">GAME<span>LOG</span></p>
-    <p>Site statique · Hébergé sur <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
-    <p class="footer-edit">✏️ Éditez <code>data.js</code> pour ajouter un avis</p>
+    <p>Hébergé sur <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    <p class="footer-edit">✏️ Éditez <code>data.js</code> → section <code>avis</code></p>
   </footer>
-
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="data.js"></script><script src="app.js"></script>
 </body>
 </html>

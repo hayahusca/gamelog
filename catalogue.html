@@ -1,91 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catalogue — GameLog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page="catalogue">
-
   <nav class="navbar">
     <a href="index.html" class="logo">GAME<span>LOG</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="avis.html">Avis</a></li>
       <li><a href="letsplay.html">Let's Play</a></li>
+      <li><a href="avis.html">Avis</a></li>
       <li><a href="catalogue.html" class="active">Catalogue</a></li>
+      <li><a href="recherches.html">Recherchés</a></li>
+      <li><a href="videos.html">Vidéos</a></li>
+      <li><a href="reseaux.html">Réseaux</a></li>
     </ul>
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
   </nav>
-
   <div class="page-hero">
     <span class="hero-tag section-tag">// collection personnelle</span>
     <h1>MON<br><span class="accent">CATALOGUE</span></h1>
-    <p>Tous les jeux que je possède, avec leur statut et mes heures de jeu.</p>
+    <p>Tous les jeux que je possède, avec statut et heures de jeu.</p>
   </div>
-
   <div class="page-content">
-
-    <!-- STATS RAPIDES -->
     <div class="summary-bar">
-      <div class="summary-item">
-        <div class="num" id="sum-total">—</div>
-        <div class="lbl">Jeux au total</div>
-      </div>
-      <div class="summary-item">
-        <div class="num" id="sum-termines">—</div>
-        <div class="lbl">Terminés</div>
-      </div>
-      <div class="summary-item">
-        <div class="num" id="sum-heures">—</div>
-        <div class="lbl">Heures jouées</div>
-      </div>
-      <div class="summary-item">
-        <div class="num" id="sum-platines">—</div>
-        <div class="lbl">Platines 🏆</div>
-      </div>
+      <div class="summary-item"><div class="num" id="sum-total">—</div><div class="lbl">Jeux au total</div></div>
+      <div class="summary-item"><div class="num" id="sum-termines">—</div><div class="lbl">Terminés</div></div>
+      <div class="summary-item"><div class="num" id="sum-heures">—</div><div class="lbl">Heures jouées</div></div>
+      <div class="summary-item"><div class="num" id="sum-platines">—</div><div class="lbl">Platines 🏆</div></div>
     </div>
-
-    <!-- BARRE DE RECHERCHE -->
-    <div class="search-bar">
-      <input type="text" id="cat-search" placeholder="Rechercher un jeu..." />
-    </div>
-
-    <!-- FILTRES -->
+    <div class="search-bar"><input type="text" id="cat-search" placeholder="Rechercher un jeu..." /></div>
     <div class="filters" id="cat-filters"></div>
-
-    <!-- TABLEAU -->
     <div style="overflow-x:auto">
       <table class="catalogue-table">
-        <thead>
-          <tr>
-            <th data-sort="titre">Titre ↕</th>
-            <th data-sort="genre">Genre ↕</th>
-            <th data-sort="plateforme">Plateforme ↕</th>
-            <th data-sort="annee">Année ↕</th>
-            <th data-sort="statut">Statut ↕</th>
-            <th data-sort="heures">Heures ↕</th>
-            <th data-sort="note">Note ↕</th>
-          </tr>
-        </thead>
-        <tbody id="catalogue-body">
-          <tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem">Chargement...</td></tr>
-        </tbody>
+        <thead><tr>
+          <th data-sort="titre">Titre ↕</th><th data-sort="genre">Genre ↕</th>
+          <th data-sort="plateforme">Plateforme ↕</th><th data-sort="annee">Année ↕</th>
+          <th data-sort="statut">Statut ↕</th><th data-sort="heures">Heures ↕</th><th data-sort="note">Note ↕</th>
+        </tr></thead>
+        <tbody id="catalogue-body"><tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem">Chargement...</td></tr></tbody>
       </table>
     </div>
-
   </div>
-
   <footer class="footer">
     <p class="logo">GAME<span>LOG</span></p>
-    <p>Site statique · Hébergé sur <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
-    <p class="footer-edit">✏️ Éditez <code>data.js</code> pour ajouter un jeu au catalogue</p>
+    <p>Hébergé sur <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    <p class="footer-edit">✏️ Éditez <code>data.js</code> → section <code>catalogue</code></p>
   </footer>
-
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="data.js"></script><script src="app.js"></script>
 </body>
 </html>
