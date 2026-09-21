@@ -139,6 +139,7 @@ img { max-width: 100%; border-radius: var(--radius); }
 .status-badge.backlog { background: rgba(150,150,180,0.1); color: var(--text-muted); }
 .status-badge.abandonne { background: rgba(255,77,109,0.1); color: var(--accent2); }
 .status-badge.platine { background: rgba(180,130,255,0.15); color: #c87aff; }
+.status-badge.possede { background: rgba(100,150,255,0.12); color: #7eb4ff; }
 
 /* ── RECHERCHES ── */
 .recherches-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }

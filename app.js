@@ -17,7 +17,7 @@ function formatDate(str) {
 }
 
 function formatStatut(s) {
-  return { 'en-cours':'En cours','termine':'Terminé','en-pause':'En pause','prevu':'Prévu','backlog':'Backlog','abandonne':'Abandonné','platine':'Platine 🏆','recherche':'Recherché','trouve':'Trouvé','commande':'Commandé' }[s] || s;
+  return { 'en-cours':'En cours','termine':'Terminé','en-pause':'En pause','prevu':'Prévu','backlog':'Backlog','abandonne':'Abandonné','platine':'Platine 🏆','possede':'Possédé','recherche':'Recherché','trouve':'Trouvé','commande':'Commandé' }[s] || s;
 }
 
 function toggleMenu() {
@@ -259,8 +259,9 @@ function renderCatalogue() {
       <td style="font-size:0.8rem;color:var(--text-muted)">${j.annee}</td>
       <td><span class="status-badge ${j.statut}">${formatStatut(j.statut)}</span></td>
       <td style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted)">${j.heures?j.heures+'h':'—'}</td>
+      <td style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted)">${j.metacritic||'—'}</td>
       <td>${etoiles(j.note)}</td>
-    </tr>`).join('') : '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem">Aucun résultat.</td></tr>';
+    </tr>`).join('') : '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:2rem">Aucun résultat.</td></tr>';
   };
 
   document.querySelectorAll('.catalogue-table th[data-sort]').forEach(th => th.addEventListener('click', () => {
@@ -268,7 +269,7 @@ function renderCatalogue() {
   }));
 
   if (fb) {
-    ['tous','platine','termine','en-cours','backlog','abandonne'].forEach((s,i) => {
+    ['tous','possede','platine','termine','en-cours','backlog','abandonne'].forEach((s,i) => {
       const btn = document.createElement('button');
       btn.className='filter-btn'+(i===0?' active':''); btn.dataset.s=s; btn.textContent=s==='tous'?'Tous':formatStatut(s);
       btn.addEventListener('click',()=>{ fb.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); filtre=s; render(); });
