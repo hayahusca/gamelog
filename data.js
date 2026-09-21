@@ -12260,7 +12260,7 @@ La fin de Phantom Liberty m'a genuinement touché. CDPR a su rattraper le coup.`
     "id": 1103,
     "titre": "God of War Ragnarök",
     "genre": "action",
-    "plateforme": "PlayStation 4, PlayStation 5",
+    "plateforme": "PlayStation 5",
     "annee": "—",
     "statut": "possede",
     "heures": 0,
@@ -12268,64 +12268,6 @@ La fin de Phantom Liberty m'a genuinement touché. CDPR a su rattraper le coup.`
     "metacritic": 94
   }
 ],
-
-  /* ── JEUX RECHERCHÉS ──
-     priorite : "haute" · "moyenne" · "basse"
-     statut   : "recherche" · "trouve" · "commande"
-     prix_max : budget max en euros (ou null)
-  */
-  recherches: [
-    {
-      id: 1,
-      titre: "Vagrant Story",
-      plateforme: "PS1",
-      annee: 2000,
-      priorite: "haute",
-      statut: "recherche",
-      prix_max: 40,
-      note: "Version française de préférence. Accepte boîte sans notice.",
-    },
-    {
-      id: 2,
-      titre: "Tactics Ogre: Let Us Cling Together",
-      plateforme: "PSP",
-      annee: 2011,
-      priorite: "haute",
-      statut: "recherche",
-      prix_max: 35,
-      note: "Version PSP uniquement, pas le remake PS4.",
-    },
-    {
-      id: 3,
-      titre: "Chrono Trigger",
-      plateforme: "DS",
-      annee: 2008,
-      priorite: "moyenne",
-      statut: "commande",
-      prix_max: 60,
-      note: "Version DS idéalement. En cours de commande.",
-    },
-    {
-      id: 4,
-      titre: "Ico",
-      plateforme: "PS2",
-      annee: 2001,
-      priorite: "moyenne",
-      statut: "recherche",
-      prix_max: 25,
-      note: "Boîte + CD suffisent.",
-    },
-    {
-      id: 5,
-      titre: "Shadow of the Colossus",
-      plateforme: "PS2",
-      annee: 2005,
-      priorite: "basse",
-      statut: "trouve",
-      prix_max: null,
-      note: "Trouvé ! En attente de réception.",
-    },
-  ],
 
   /* ── VIDÉOS ──
      type : "letsplay" · "test" · "top" · "conseil" · "autre"
